@@ -2,7 +2,7 @@
 
 ![][logo-url]
 
-**Start your next React project in seconds.**\
+
 **[See the demo][deployment]**
 
 ![][release]
@@ -38,11 +38,9 @@ https://user-images.githubusercontent.com/67953260/224526737-68b7f3fa-5303-4667-
 - Prettier and ESLint
 - React Query and more...
 
-See [open issues](https://github.com/nathanhettige/daisyui-starterkit/issues) for new features in development.
-
 ## 🚀 Quick Start
 
-[Create a new repository](https://github.com/nathanhettige/daisyui-starterkit/generate) using this template. Clone it down and open a terminal at the root of the project.
+Clone it down and open a terminal at the root of the project.
 
 ```bash
 > yarn install
@@ -62,4 +60,5 @@ See [open issues](https://github.com/nathanhettige/daisyui-starterkit/issues) fo
 
 
 Made by Nathan Hettige
+<br />
 Modified by AA | Le Studio - STEP
