@@ -1,3 +1,5 @@
+import { ChangeEventHandler } from 'react';
+
 const MenuIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +81,41 @@ const navLinks: Array<{
   }
 ];
 
+const themes: string[] = [
+  'dark',
+  'dracula',
+  'bumblebee',
+  'emerald',
+  'corporate',
+  'synthwave',
+  'retro',
+  'cyberpunk',
+  'valentine',
+  'halloween',
+  'garden',
+  'forest',
+  'aqua',
+  'lofi',
+  'pastel',
+  'fantasy',
+  'wireframe',
+  'black',
+  'luxury',
+  'cmyk',
+  'autumn',
+  'business',
+  'acid',
+  'lemonade',
+  'night',
+  'coffee',
+  'winter'
+];
+
+const handleThemeChange = (event: ChangeEvent<HTMLSelectElement>) => {
+  const selectedTheme = event.target.value;
+  document.querySelector('html')?.setAttribute('data-theme', selectedTheme);
+};
+
 export const Navbar = (
   <div className="navbar bg-base-100">
     <div className="navbar-start">
@@ -102,6 +139,18 @@ export const Navbar = (
         daisyUI react
       </a>
     </div>
+
+    <div>
+      <select className="select w-full" onChange={handleThemeChange}>
+        {themes.map((theme, index) => (
+          <option value={theme} key={index}>
+            {theme}
+          </option>
+        ))}
+      </select>
+    </div>
+
+    <div></div>
     <div className="navbar-end">
       <button className="btn btn-ghost btn-circle">
         <SearchIcon />

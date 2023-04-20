@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-body, html {
+body,
+html {
   font-family: 'Inter', sans-serif;
 }
 
@@ -23,7 +24,6 @@ body, html {
   h4 {
     @apply text-3xl sm:text-4xl;
     font-weight: 600;
-
   }
   h5 {
     @apply text-2xl sm:text-3xl;
@@ -49,6 +49,6 @@ body, html {
   }
 }
 
-[data-theme="dark"] .btn {
+[data-theme='dark'] .btn {
   border-radius: 50%;
 }
